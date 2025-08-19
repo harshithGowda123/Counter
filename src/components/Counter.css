@@ -1,0 +1,66 @@
+/* General container styling */
+.counter-container {
+  text-align: center;
+  margin-top: 50px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 20px;
+}
+
+/* Counter number */
+.counter-container h2 {
+  font-size: 3rem;
+  margin: 20px 0;
+  color: #333;
+}
+
+/* Buttons layout */
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap; /* Responsive */
+}
+
+/* Buttons style */
+button {
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background: #007bff;
+  color: white;
+  transition: 0.3s ease;
+}
+
+/* Hover effect */
+button:hover {
+  background: #0056b3;
+}
+
+/* Reset button with different color */
+button:last-child {
+  background: #dc3545;
+}
+
+button:last-child:hover {
+  background: #a71d2a;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  .counter-container h2 {
+    font-size: 2rem;
+  }
+
+  button {
+    width: 100%;
+    max-width: 200px;
+    font-size: 1rem;
+  }
+
+  .button-group {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
